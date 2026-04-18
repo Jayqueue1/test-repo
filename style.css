@@ -134,6 +134,29 @@ body {
   border-top: 1px solid #e3e3e8;
 }
 
+/* tablets */
+@media (min-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+}
+/* laptops and desktops */
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 
 
 
