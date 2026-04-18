@@ -1,0 +1,139 @@
+/* RESET — this matters */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content grows to push footer down */
+.main-content {
+  flex: 1;
+}
+
+/* HEADER */
+
+.navbar {
+  height: 80px;
+  padding: 0 24px;
+  display: flex;              /* ✅ forces single row */
+  align-items: center;        /* ✅ vertical centering */
+  justify-content: space-between;
+  background-color: #F8F3FD;
+}
+
+
+/* LOGO — LEFT & CENTERED VERTICALLY */
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* nav center */
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+
+/* BUTTONS — RIGHT */
+.buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.sign-in {
+  cursor: pointer;
+}
+
+.sign-up {
+  padding: 10px 20px;
+  background: #5b2aa6;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* main class */
+.main{
+    margin-top:4cm;
+    h1{
+        text-align: center;
+    }
+    h5{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        
+    }
+}
+.button{
+  padding: 10px 20px;
+  background: #5b2aa6;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.button-primary{
+  
+
+  display: block;            /* makes margin work */
+  margin: 32px auto;         /* centers horizontally */
+  padding: 12px 28px;
+
+  background: #5b2aa6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+
+  width: fit-content;        /* keeps it compact */
+}
+
+
+
+.button-primary:hover {
+  background-color: #4a2390;
+}
+
+
+.badge {
+  display: block;              /* allow auto margins */
+  width: fit-content;          /* hug the text */
+  margin: 0 auto 16px;         /* center horizontally + space below */
+
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5b2aa6;
+
+  border: 1px solid #5b2aa6;
+  border-radius: 999px;        /* pill shape */
+  background: #ffffff;
+}
+
+
+.footer {
+  border-top: 1px solid #e3e3e8;
+}
+
+
+
+
