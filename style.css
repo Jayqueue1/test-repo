@@ -25,8 +25,8 @@ body {
 .navbar {
   height: 80px;
   padding: 0 24px;
-  display: flex;              /* ✅ forces single row */
-  align-items: center;        /* ✅ vertical centering */
+  display: flex;              /*  forces single row */
+  align-items: center;        /*  vertical centering */
   justify-content: space-between;
   background-color: #F8F3FD;
 }
@@ -49,8 +49,10 @@ display: flex;
   padding-left: 32px;   /* pushes away from left */
 
   max-width: 320px;     /* matches desired width */
-
+  text-decoration: none;
+ 
 }
+
 
 /* nav center */
 .nav-links {
@@ -60,6 +62,16 @@ display: flex;
   margin: 0;
   padding: 0;
   white-space: nowrap;
+  
+}
+.nav-links a{
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.nav-links a:hover {
+  color: #5b2aa6;        /* hover effect */
 }
 
 
@@ -81,6 +93,35 @@ display: flex;
   border-radius: 8px;
   cursor: pointer;
 }
+
+.signup-page {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 24px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signup-form input {
+  padding: 12px;
+  font-size: 16px;
+}
+
+.signup-form button {
+  padding: 12px;
+  background: #5b2aa6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
 /* main class */
 .main{
     margin-top:4cm;
